@@ -130,3 +130,10 @@ main {
   font-family: serif;
   font-size: 1rem;
 }
+.searchbar .alphabet {
+  color: white;
+  background-color: black;
+}
+.new-item-bar {
+  margin-top: 20px;
+}

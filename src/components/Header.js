@@ -1,7 +1,12 @@
 import React from "react";
 import Search from "./Search";
 
-function Header() {
+function Header({
+  onHandleFilter,
+  search,
+  filterAlphabetically,
+  alphabetically,
+}) {
   return (
     <header>
       <h1>
@@ -10,7 +15,12 @@ function Header() {
         </span>
         gregslist
       </h1>
-      <Search />
+      <Search
+        onHandleFilter={onHandleFilter}
+        search={search}
+        filterAlphabetically={filterAlphabetically}
+        alphabetically={alphabetically}
+      />
     </header>
   );
 }
